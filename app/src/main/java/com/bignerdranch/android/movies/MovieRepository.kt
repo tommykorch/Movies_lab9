@@ -5,12 +5,13 @@ import androidx.room.Room
 import com.bignerdranch.android.movies.database.MovieDatabase
 import java.util.UUID
 import java.util.concurrent.Executors
+private const val DATABASE_NAME = "movie-database"
 class MovieRepository private  constructor(context: Context){
     private val database : MovieDatabase =
         Room.databaseBuilder(
             context.applicationContext,
             MovieDatabase::class.java,
-            "MovieDatabase"
+            DATABASE_NAME
         ).build()
     private val movieDao = database.movieDao()
     private val executor = Executors.newSingleThreadExecutor()

@@ -8,7 +8,7 @@ import android.widget.CheckBox
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.bignerdranch.android.wewatch.network.RetrofitClient
+import com.bignerdranch.android.movies.network.RetrofitClient
 import com.squareup.picasso.Picasso
 import java.util.HashSet
 
